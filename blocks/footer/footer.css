@@ -1,7 +1,8 @@
 footer {
   padding: 2rem;
-  background-color: var(--overlay-background-color);
+  background-color: rgba(23, 24, 33, 1);
   font-size: var(--body-font-size-s);
+  color: rgba(255, 255, 255, 1);
 }
 
 footer .footer {
@@ -11,4 +12,135 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+}
+
+.footer.block {
+  padding: 2.5rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-gap: 2.5rem;
+  gap: 2.5rem;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 0rem;
+  margin-right: 0rem;
+
+  grid-gap: 2.5rem;
+  gap: 2.5rem;
+}
+
+.footer-left {
+  text-align: start;
+  display: grid;
+}
+
+.footer-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(45, 47, 65, 1);
+  border-radius: 0.5rem;
+
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.footer-right-content {
+  display: flex;
+
+  background-color: rgba(45, 47, 65, 1);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+}
+
+.footer-title {
+  font-weight: 400;
+  text-align: start;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.footer-copyright {
+  display: grid;
+  grid-gap: 1.25rem;
+  gap: 1.25rem;
+
+  text-align: center;
+  height: fit-content;
+
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  border-style: solid;
+  border-radius: 0rem;
+  border-width: 0px;
+  border-top-width: 2px;
+  border-color: rgba(45, 47, 65, 1);
+}
+
+.i-youtube {
+  --icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="256" height="256" viewBox="0 0 256 256"%3E%3Cpath fill="currentColor" d="M234.33 69.52a24 24 0 0 0-14.49-16.4C185.56 39.88 131 40 128 40s-57.56-.12-91.84 13.12a24 24 0 0 0-14.49 16.4C19.08 79.5 16 97.74 16 128s3.08 48.5 5.67 58.48a24 24 0 0 0 14.49 16.41C69 215.56 120.4 216 127.34 216h1.32c6.94 0 58.37-.44 91.18-13.11a24 24 0 0 0 14.49-16.41c2.59-10 5.67-28.22 5.67-58.48s-3.08-48.5-5.67-58.48Zm-72.11 61.81l-48 32A4 4 0 0 1 108 160V96a4 4 0 0 1 6.22-3.33l48 32a4 4 0 0 1 0 6.66Z"%2F%3E%3C%2Fsvg%3E');
+  -webkit-mask: var(--icon) no-repeat;
+  mask: var(--icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: rgba(248, 113, 113, 1);
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 0rem;
+}
+
+.i-facebook {
+  --icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02Z"%2F%3E%3C%2Fsvg%3E');
+  -webkit-mask: var(--icon) no-repeat;
+  mask: var(--icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: rgba(66, 103, 178, 1);
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 0rem;
+}
+
+.i-helix {
+  background: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 16 16' style='enable-background:new 0 0 16 16' xml:space='preserve'%3E%3Cstyle%3E.st0%7Bfill:%23f15a3a%7D.st1%7Bfill:%23c71f3d%7D.st2%7Bfill:%23ffc40c%7D%3C/style%3E%3Ccircle class='st0' cx='1.7' cy='8' r='1.7'/%3E%3Ccircle class='st0' cx='14.3' cy='8' r='1.7'/%3E%3Ccircle class='st1' cx='4.7' cy='2' r='2'/%3E%3Ccircle class='st2' cx='12' cy='2' r='1.3'/%3E%3Ccircle class='st1' cx='12' cy='14' r='2'/%3E%3Ccircle class='st2' cx='4.7' cy='14' r='1.3'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-color: transparent;
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 0rem;
+}
+
+.vertcentered {
+  display: flex;
+  align-items: center;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
 }

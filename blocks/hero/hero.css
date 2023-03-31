@@ -12,13 +12,34 @@ main .hero {
   position: relative;
   padding: 32px;
   min-height: 300px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 main .hero h1 {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
+}
+
+main .hero .subhead {
+  font-size: var(--heading-font-size-m);
+  line-height: 1.75;
+  font-weight: 500;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+main .hero .join-us {
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background-color: rgba(30, 34, 42, 1);
+  border-radius: 9999px;
+
+  text-decoration: none;
+  color: inherit;
 }
 
 main .hero picture {
@@ -30,6 +51,7 @@ main .hero picture {
   right: 0;
   object-fit: cover;
   box-sizing: border-box;
+  filter: invert(0.22);
 }
 
 main .hero img {
