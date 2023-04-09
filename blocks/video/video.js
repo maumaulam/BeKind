@@ -7,6 +7,7 @@ export default function decorate(block) {
     // block.append(video);
     const video = document.createElement('iframe');
     video.src = block.children[0].textContent;
+    //video.loading = 'lazy';
     video.className = 'video';
     block.textContent = '';
     block.append(video);
